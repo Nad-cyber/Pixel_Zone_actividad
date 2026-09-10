@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Zone | Juegos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="logo pixel" href="index.html"><span class="controller" aria-hidden="true"></span> PIXEL ZONE</a>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">INICIO</a><a class="active" href="juegos.html">JUEGOS</a><a href="noticias.html">NOTICIAS</a><a href="contacto.html">CONTACTO</a>
+    </nav>
+  </div>
+</header>
+<main class="page-main">
+  <div class="container">
+    <div class="section-title"><h1 class="page-title">CATÁLOGO GAMING</h1><div class="line"></div></div>
+    <p class="page-subtitle">Encuentra tu próxima aventura entre nuestros favoritos.</p>
+    <div class="filters" aria-label="Filtrar juegos">
+      <button class="filter active" data-filter="todos">TODOS</button>
+      <button class="filter" data-filter="accion">ACCIÓN</button>
+      <button class="filter" data-filter="aventura">AVENTURA</button>
+      <button class="filter" data-filter="rpg">RPG</button>
+      <button class="filter" data-filter="terror">TERROR</button>
+      <button class="filter" data-filter="shooter">SHOOTER</button>
+    </div>
+    <div class="grid-games" id="gamesGrid">
+      <article class="card game-item" data-genre="aventura"><div class="card-image"><img src="img/minecraft.jpg" alt="Minecraft"><span class="category cat-teal" style="position:absolute;top:10px;left:10px">AVENTURA</span></div><div class="card-body"><h3>Minecraft</h3><div class="rating">★★★★★</div><p>Construye, explora y sobrevive en un mundo de bloques.</p><a class="btn btn-blue" href="#">VER MÁS</a></div></article>
+      <article class="card game-item" data-genre="accion"><div class="card-image"><img src="img/Grand-Theft-Auto-V.jpg" alt="Grand Theft Auto V"><span class="category cat-orange" style="position:absolute;top:10px;left:10px">ACCIÓN</span></div><div class="card-body"><h3>Grand Theft Auto V</h3><div class="rating">★★★★★</div><p>Misiones, acción y libertad absoluta en Los Santos.</p><a class="btn btn-blue" href="#">VER MÁS</a></div></article>
+      <article class="card game-item" data-genre="shooter"><div class="card-image"><img src="img/Valorant.jpg" alt="Valorant"><span class="category cat-blue" style="position:absolute;top:10px;left:10px">SHOOTER</span></div><div class="card-body"><h3>Valorant</h3><div class="rating">★★★★☆</div><p>Shooter táctico por equipos con agentes únicos.</p><a class="btn btn-blue" href="#">VER MÁS</a></div></article>
+      <article class="card game-item" data-genre="terror"><div class="card-image"><img src="img/Resident-Evil-4.jpg" alt="Resident Evil 4"><span class="category cat-pink" style="position:absolute;top:10px;left:10px">TERROR</span></div><div class="card-body"><h3>Resident Evil 4</h3><div class="rating">★★★★★</div><p>Sobrevive a una aldea infectada en este clásico renovado.</p><a class="btn btn-blue" href="#">VER MÁS</a></div></article>
+      <article class="card game-item" data-genre="rpg"><div class="card-image"><img src="img/hero.jpg" alt="Aventura RPG Pixel Zone"><span class="category cat-yellow" style="position:absolute;top:10px;left:10px">RPG</span></div><div class="card-body"><h3>Neon Quest</h3><div class="rating">★★★★☆</div><p>Forma tu equipo y conquista una ciudad llena de secretos.</p><a class="btn btn-blue" href="#">VER MÁS</a></div></article>
+      <article class="card game-item" data-genre="aventura"><div class="card-image"><img src="img/Gamescom.jpg" alt="Aventura Gamescom"><span class="category cat-teal" style="position:absolute;top:10px;left:10px">AVENTURA</span></div><div class="card-body"><h3>Cosmic Raiders</h3><div class="rating">★★★★☆</div><p>Explora galaxias desconocidas y descubre nuevos planetas.</p><a class="btn btn-blue" href="#">VER MÁS</a></div></article>
+      <article class="card game-item" data-genre="shooter"><div class="card-image"><img src="img/Valorant-trae-nuevo-agente-y-mapa.jpg" alt="Nuevo shooter competitivo"><span class="category cat-blue" style="position:absolute;top:10px;left:10px">SHOOTER</span></div><div class="card-body"><h3>Cyber Strike</h3><div class="rating">★★★★☆</div><p>Combates rápidos y estrategia en cada ronda.</p><a class="btn btn-blue" href="#">VER MÁS</a></div></article>
+      <article class="card game-item" data-genre="accion"><div class="card-image"><img src="img/Grand-Theft-Auto-V.jpg" alt="Acción urbana"><span class="category cat-orange" style="position:absolute;top:10px;left:10px">ACCIÓN</span></div><div class="card-body"><h3>Street Legends</h3><div class="rating">★★★★☆</div><p>Corre, compite y domina las calles con tu escuadrón.</p><a class="btn btn-blue" href="#">VER MÁS</a></div></article>
+    </div>
+  </div>
+</main>
+<footer><div class="container footer-grid"><div><h3>PIXEL ZONE</h3><p>Tu portal de videojuegos: descubre, explora y vive la experiencia gaming.</p><div class="socials"><span class="social">TW</span><span class="social">IG</span><span class="social">DC</span><span class="social">YT</span></div></div><div><h3>NAVEGACIÓN</h3><div class="footer-links"><a href="index.html">Inicio</a><a href="juegos.html">Juegos</a><a href="noticias.html">Noticias</a><a href="contacto.html">Contacto</a></div></div><div><h3>CONTACTO</h3><p>hola@pixelzone.es<br>Proyecto académico<br>Lun–Vie, 9:00 – 18:00</p></div></div><div class="container copyright">© 2026 PIXEL ZONE — Proyecto académico</div></footer>
+<script>
+function toggleMenu(){document.getElementById('navLinks').classList.toggle('open')}
+document.querySelectorAll('.filter').forEach(function(button){
+  button.addEventListener('click',function(){
+    document.querySelectorAll('.filter').forEach(function(item){item.classList.remove('active')});
+    button.classList.add('active');
+    var filter=button.dataset.filter;
+    document.querySelectorAll('.game-item').forEach(function(game){
+      game.style.display=filter==='todos'||game.dataset.genre===filter?'flex':'none';
+    });
+  });
+});
+</script>
+</body>
+</html>

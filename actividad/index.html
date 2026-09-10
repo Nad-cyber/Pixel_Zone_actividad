@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pixel Zone | Videojuegos</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="logo pixel" href="index.html"><span class="controller"></span> PIXEL ZONE</a>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="index.html">INICIO</a>
+      <a class="" href="juegos.html">JUEGOS</a>
+      <a class="" href="noticias.html">NOTICIAS</a>
+      <a class="" href="contacto.html">CONTACTO</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="badge">★ NUEVO</span>
+      <h1>DESCUBRE<br><span>TU PRÓXIMO</span><br>JUEGO</h1>
+      <p>Explora nuevos mundos, descubre grandes aventuras y encuentra tu próximo videojuego favorito.</p>
+      <div class="actions"><a class="btn btn-orange" href="juegos.html">EXPLORAR JUEGOS</a><a class="btn btn-yellow" href="noticias.html">VER NOTICIAS</a></div>
+      <div class="stats"><div><strong>500+</strong><span>Juegos</span></div><div><strong>50K+</strong><span>Jugadores</span></div><div><strong>4.9</strong><span>Rating</span></div></div>
+    </div>
+    <div class="hero-image">
+      <img src="img/hero.jpg" alt="Hero de Pixel Zone">
+      <span class="float star">✦</span><span class="float coin">●</span>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section-title"><h2>JUEGOS POPULARES</h2><div class="line"></div></div>
+    <div class="grid-games"><article class="card" style="box-shadow:4px 4px 0 var(--yellow)">
+      <div class="card-image"><img src="img/minecraft.jpg" alt="Minecraft"><span class="category cat-teal" style="position:absolute;top:10px;left:10px">Aventura</span></div>
+      <div class="card-body">
+        <h3>Minecraft</h3><div class="rating">★★★★★</div><p>Construye, explora y sobrevive en un mundo de bloques. Creatividad sin límites.</p>
+        <a class="btn btn-blue" href="juegos.html">VER MÁS</a>
+      </div>
+    </article><article class="card" style="box-shadow:4px 4px 0 var(--pink)">
+      <div class="card-image"><img src="img/Grand-Theft-Auto-V.jpg" alt="Grand Theft Auto V"><span class="category cat-orange" style="position:absolute;top:10px;left:10px">Acción</span></div>
+      <div class="card-body">
+        <h3>Grand Theft Auto V</h3><div class="rating">★★★★★</div><p>Mundo abierto en Los Santos. Misiones, acción y libertad absoluta.</p>
+        <a class="btn btn-blue" href="juegos.html">VER MÁS</a>
+      </div>
+    </article><article class="card" style="box-shadow:4px 4px 0 var(--orange)">
+      <div class="card-image"><img src="img/Valorant.jpg" alt="Valorant"><span class="category cat-blue" style="position:absolute;top:10px;left:10px">Shooter</span></div>
+      <div class="card-body">
+        <h3>Valorant</h3><div class="rating">★★★★☆</div><p>Shooter táctico por equipos con agentes únicos y habilidades especiales.</p>
+        <a class="btn btn-blue" href="juegos.html">VER MÁS</a>
+      </div>
+    </article><article class="card" style="box-shadow:4px 4px 0 var(--teal)">
+      <div class="card-image"><img src="img/Resident-Evil-4.jpg" alt="Resident Evil 4"><span class="category cat-pink" style="position:absolute;top:10px;left:10px">Terror</span></div>
+      <div class="card-body">
+        <h3>Resident Evil 4</h3><div class="rating">★★★★★</div><p>Survival horror. Lucha por tu vida en una aldea infectada.</p>
+        <a class="btn btn-blue" href="juegos.html">VER MÁS</a>
+      </div>
+    </article></div>
+  </div>
+</section>
+<section class="section alt">
+  <div class="container">
+    <div class="section-title"><h2>ÚLTIMAS NOTICIAS</h2><div class="line" style="background:linear-gradient(90deg,var(--blue),transparent)"></div></div>
+    <div class="news-grid"><article class="card news-card">
+      <div class="card-image"><img src="img/Grand-Theft-Auto-V.jpg" alt="Novedades de GTA VI"><span class="category cat-orange" style="position:absolute;top:10px;left:10px">Lanzamiento</span></div>
+      <div class="card-body"><div class="news-date">1 sep 2026</div><h3>GTA VI confirma fecha de lanzamiento para 2026</h3><p>Rockstar Games anuncia oficialmente el lanzamiento de Grand Theft Auto VI para 2026.</p><a class="btn btn-blue" href="noticias.html">LEER MÁS</a></div>
+    </article><article class="card news-card">
+      <div class="card-image"><img src="img/Valorant-trae-nuevo-agente-y-mapa.jpg" alt="Valorant trae nuevo agente y mapa"><span class="category cat-teal" style="position:absolute;top:10px;left:10px">Actualización</span></div>
+      <div class="card-body"><div class="news-date">28 ago 2026</div><h3>Valorant trae nuevo agente y mapa</h3><p>Riot Games sorprende con nuevo contenido y cambios para la comunidad.</p><a class="btn btn-blue" href="noticias.html">LEER MÁS</a></div>
+    </article><article class="card news-card">
+      <div class="card-image"><img src="img/Gamescom.jpg" alt="Las novedades más importantes de Gamescom"><span class="category cat-yellow" style="position:absolute;top:10px;left:10px">Evento</span></div>
+      <div class="card-body"><div class="news-date">25 ago 2026</div><h3>Gamescom: todo lo que debes saber</h3><p>El evento gaming llega cargado de anuncios, demos y novedades.</p><a class="btn btn-blue" href="noticias.html">LEER MÁS</a></div>
+    </article></div>
+    <div style="text-align:center;margin-top:35px"><a class="btn btn-blue" href="noticias.html">VER TODAS LAS NOTICIAS →</a></div>
+  </div>
+</section>
+</main><footer>
+  <div class="container footer-grid">
+    <div>
+      <h3> PIXEL ZONE</h3>
+      <p>Tu portal de videojuegos. Descubre, explora y vive la experiencia gaming con un toque retro.</p>
+      <div class="socials"><span class="social">TW</span><span class="social">IG</span><span class="social">DC</span><span class="social">YT</span></div>
+    </div>
+    <div>
+      <h3>NAVEGACIÓN</h3>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a><a href="juegos.html">Juegos</a><a href="noticias.html">Noticias</a><a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+    <div>
+      <h3>CONTACTO</h3>
+      <p>hola@pixelzone.es<br>Proyecto académico<br>Lun–Vie, 9:00 – 18:00</p>
+    </div>
+  </div>
+  <div class="container copyright">© 2026 PIXEL ZONE — Proyecto académico</div>
+</footer><script>
+function toggleMenu(){document.getElementById('navLinks').classList.toggle('open')}
+</script></body></html>
